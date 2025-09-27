@@ -162,6 +162,36 @@ function App() {
               <div className="mt-2 text-red-400">100% Driven</div>
             </div>
           </div>
+          
+          {/* Contract Address Section */}
+          <div className="mt-12 max-w-4xl mx-auto">
+            <div className="bg-black border border-red-600 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold text-center gradient-text mb-6">Contract Address</h3>
+              <div className="bg-gray-900 border border-gray-700 p-4 rounded-lg">
+                <div className="text-center">
+                  <div className="text-gray-400 text-sm mb-2">KIMML Contract Address</div>
+                  <div className="text-white font-mono text-lg break-all" id="contract-address">
+                    Contract address will be added when token is deployed
+                  </div>
+                  <button 
+                    className="mt-4 bg-red-600 hover:bg-red-500 px-4 py-2 rounded text-sm font-bold transition-colors"
+                    onClick={() => {
+                      const address = document.getElementById('contract-address').textContent;
+                      if (address && address !== 'Contract address will be added when token is deployed') {
+                        navigator.clipboard.writeText(address);
+                        alert('Contract address copied to clipboard!');
+                      }
+                    }}
+                  >
+                    📋 Copy Address
+                  </button>
+                </div>
+              </div>
+              <div className="mt-4 text-center text-gray-400 text-sm">
+                <p>Always verify the contract address before making any transactions</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
