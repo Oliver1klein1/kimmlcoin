@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KimmlCoin | Free Speech The World Over</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <!-- React -->
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- Twitter Embed -->
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text { background: linear-gradient(90deg, #e11d48, #ec4899, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+<div id="root"></div>
+
+<script type="text/babel">
+
+function App() {
+  return (
+    <div>
+      {/* Nav */}
+      <header className="sticky top-0 z-40 bg-black/80 backdrop-blur border-b border-red-600">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+          <div className="font-extrabold text-2xl gradient-text">KimmlCoin</div>
+          <nav className="hidden md:flex gap-6 text-sm">
+            <a href="#mission" className="hover:text-red-400">Mission</a>
+            <a href="#quotes" className="hover:text-red-400">Quotes</a>
+            <a href="#tokenomics" className="hover:text-red-400">Tokenomics</a>
+            <a href="#join" className="hover:text-red-400">Join</a>
+            <a href="https://t.me/" target="_blank" className="bg-red-600 px-3 py-1 rounded font-bold hover:bg-red-500">Get KIMML</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 className="text-4xl md:text-6xl font-black leading-tight">
+            Because no-one should be{" "}
+            <span className="gradient-text">silenced, cancelled, shadow-banned,</span> or demonetized.
+          </h1>
+          <p className="mt-4 text-gray-300">
+            <strong>KimmlCoin (KIMML)</strong> is the memecoin turning late-night laughs
+            into a global movement for free speech. Meme censorship out of existence.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <a href="https://pump.fun/" target="_blank" className="bg-red-600 px-5 py-3 rounded font-bold hover:bg-red-500">🚀 Get KIMML</a>
+            <a href="https://twitter.com/" target="_blank" className="border border-red-500 px-5 py-3 rounded hover:bg-red-500/30">🐦 Join Twitter</a>
+          </div>
+        </div>
+        <div>
+          <img src="KimmlCoin.png" alt="KimmlCoin" className="rounded-lg shadow-2xl"/>
+        </div>
+      </section>
+
+      {/* Mission */}
+      <section id="mission" className="bg-gradient-to-r from-red-700/20 to-pink-600/20 py-16">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-extrabold gradient-text">Mission</h2>
+          <p className="mt-4 text-gray-200 text-lg italic">"Free Speech The World Over."</p>
+          <p className="mt-2 text-gray-400">
+            KIMML is a bold reminder that comedy, truth, and innovation thrive only when speech is free.
+            Join us in defending the punchline.
+          </p>
+        </div>
+      </section>
+
+      {/* Quotes */}
+      <section id="quotes" className="py-16 max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-extrabold text-center gradient-text mb-12">Voices of Freedom</h2>
+        
+        {/* Twitter Embed */}
+        <div className="flex justify-center mb-12">
+          <div className="w-full max-w-md">
+            <iframe 
+              src="https://platform.twitter.com/embed/Tweet.html?id=1968442008957030669&theme=dark&chrome=nofooter%20noborders"
+              width="100%" 
+              height="400" 
+              frameBorder="0" 
+              scrolling="no"
+              className="rounded-lg"
+            ></iframe>
+          </div>
+        </div>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="bg-black border border-red-600 p-6 rounded-lg hover:border-red-400 transition-colors">
+            <blockquote className="italic text-gray-200 text-lg leading-relaxed">
+              &ldquo;I disapprove of what you say, but I will defend to the death your right to say it.&rdquo;
+            </blockquote>
+            <cite className="block mt-4 text-red-400 font-semibold">— Voltaire</cite>
+          </div>
+          
+          <div className="bg-black border border-red-600 p-6 rounded-lg hover:border-red-400 transition-colors">
+            <blockquote className="italic text-gray-200 text-lg leading-relaxed">
+              &ldquo;If freedom of speech is taken away, then dumb and silent we may be led, like sheep to the slaughter.&rdquo;
+            </blockquote>
+            <cite className="block mt-4 text-red-400 font-semibold">— George Washington</cite>
+          </div>
+          
+          <div className="bg-black border border-red-600 p-6 rounded-lg hover:border-red-400 transition-colors">
+            <blockquote className="italic text-gray-200 text-lg leading-relaxed">
+              &ldquo;The right to offend is the right to speak.&rdquo;
+            </blockquote>
+            <cite className="block mt-4 text-red-400 font-semibold">— Rowan Atkinson</cite>
+          </div>
+          
+          <div className="bg-black border border-red-600 p-6 rounded-lg hover:border-red-400 transition-colors">
+            <blockquote className="italic text-gray-200 text-lg leading-relaxed">
+              &ldquo;Free speech is the whole thing, the whole ball game. Free speech is life itself.&rdquo;
+            </blockquote>
+            <cite className="block mt-4 text-red-400 font-semibold">— Salman Rushdie</cite>
+          </div>
+          
+          <div className="bg-black border border-red-600 p-6 rounded-lg hover:border-red-400 transition-colors">
+            <blockquote className="italic text-gray-200 text-lg leading-relaxed">
+              &ldquo;The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion.&rdquo;
+            </blockquote>
+            <cite className="block mt-4 text-red-400 font-semibold">— Albert Camus</cite>
+          </div>
+          
+          <div className="bg-black border border-red-600 p-6 rounded-lg hover:border-red-400 transition-colors">
+            <blockquote className="italic text-gray-200 text-lg leading-relaxed">
+              &ldquo;Without freedom of thought, there can be no such thing as wisdom; and no such thing as public liberty, without freedom of speech.&rdquo;
+            </blockquote>
+            <cite className="block mt-4 text-red-400 font-semibold">— Benjamin Franklin</cite>
+          </div>
+        </div>
+      </section>
+
+      {/* Tokenomics */}
+      <section id="tokenomics" className="bg-gradient-to-b from-black to-red-900/20 py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-extrabold text-center gradient-text">Tokenomics</h2>
+          <div className="mt-8 grid md:grid-cols-4 gap-6 text-center">
+            <div className="bg-black border border-red-600 p-6 rounded">
+              <div className="text-lg font-bold">Total Supply</div>
+              <div className="mt-2 text-red-400">1,000,000,000 KIMML</div>
+            </div>
+            <div className="bg-black border border-red-600 p-6 rounded">
+              <div className="text-lg font-bold">Liquidity</div>
+              <div className="mt-2 text-red-400">Locked</div>
+            </div>
+            <div className="bg-black border border-red-600 p-6 rounded">
+              <div className="text-lg font-bold">Contract</div>
+              <div className="mt-2 text-red-400">Renounced</div>
+            </div>
+            <div className="bg-black border border-red-600 p-6 rounded">
+              <div className="text-lg font-bold">Community</div>
+              <div className="mt-2 text-red-400">100% Driven</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Join */}
+      <section id="join" className="py-16 text-center">
+        <h2 className="text-3xl font-extrabold gradient-text">Join the Movement</h2>
+        <p className="mt-3 text-gray-400">Your voice matters. So does your meme.</p>
+        <div className="mt-6 flex justify-center gap-4 flex-wrap">
+          <a href="https://pump.fun/" target="_blank" className="bg-red-600 px-5 py-3 rounded font-bold hover:bg-red-500">🚀 Buy KIMML</a>
+          <a href="https://twitter.com/" target="_blank" className="border border-red-500 px-5 py-3 rounded hover:bg-red-500/30">🐦 Twitter</a>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-red-800 py-8 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} KimmlCoin (KIMML). Free Speech The World Over.
+      </footer>
+    </div>
+  );
+}
+
+ReactDOM.render(<App/>, document.getElementById("root"));
+
+// Load Twitter widgets after React renders
+setTimeout(function() {
+  if (window.twttr && window.twttr.widgets) {
+    window.twttr.widgets.load();
+  } else {
+    // Wait for Twitter script to load
+    var checkTwitter = setInterval(function() {
+      if (window.twttr && window.twttr.widgets) {
+        window.twttr.widgets.load();
+        clearInterval(checkTwitter);
+      }
+    }, 100);
+  }
+}, 1000);
+
+</script>
+
+</body>
+</html>
